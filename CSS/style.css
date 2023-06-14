@@ -1,0 +1,118 @@
+/*Estilização do CSS*/
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+body{
+    size: 15px;
+    background-color: #3498DB;
+    font-family: Poppins,sans-serif;
+    color: #D6EAF8;
+}
+
+h1{
+    text-align: center;
+    padding: 30px;
+    color: #1B4F72;
+}
+
+h3{
+    text-align: center;
+    padding: 25px;
+    color: #1B4F72;
+}
+
+p{
+    text-align: center;
+}
+
+form{
+    padding: 30px;
+    text-align: center;
+}
+
+select{
+    font-family: Poppins, sans-serif;
+    color: #1B4F72;
+    border: none;
+    border-radius: 25px;
+}
+
+input{
+    font-family: Poppins, sans-serif;
+    color: #1B4F72;
+    background-color: #D6EAF8;
+    border: none;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.borda{
+    background-color: #D6EAF8;
+    text-align: center;
+    margin: 5%;
+    border-radius: 15px;
+}
+.borda.um{
+    margin:0%;
+}
+
+.borda.dois{
+    background-color: #1B4F72;
+    padding: 10px;
+    margin-left:250px ;
+    margin-right:250px ;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex.coluna{
+    flex-direction: column;
+}
+
+.flex.gap{
+    gap: 5px;
+}
+
+.flex.cima{
+    align-items:first baseline;
+}
+
+table{
+    color: #1B4F72;
+}
+
+td{
+    background-color: #246896;
+    border-radius: 10px;
+    color:#D6EAF8;
+    text-align: center;
+}
+
+.linha{
+    background-color: #4e85ac;
+}
+
+.descricao{
+    font-size: 7px;
+}
+
+.titulo_tabela{
+    font-size: 25px;
+    background-color: #1B4F72;
+}
+
+.margin1{
+    margin: 25px;
+}
+
+.subtitulo{
+    font-size: 12px;
+    background-color: #173143;
+}

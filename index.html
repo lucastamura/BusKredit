@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Horário dos Ônibus</title>
+</head>
+<body>
+    <div class="flex coluna">
+        <div class="borda">
+            <h1>Horários dos Ônibus</h1>
+        </div>
+        <div class="borda">
+            <h3>Região de Marília x Tupã</h3>
+        </div>
+        <p>Horários da empresa Princesa do Norte</p>
+    </div>
+    <div class="borda dois">
+        <form action="" >
+            <div class="flex gap">
+                <select id="origem" onChange="atualizaValores()" value="origem">
+                    <option value="Origem" selected>Origem</option>
+                    <option value="marilia">Marília</option>
+                    <option value="nobrega">Padre Nóbrega</option>
+                    <option value="oriente">Oriente</option>
+                    <option value="pompeia">Pompéia</option>
+                    <option value="paulópolis">Paulópolis</option>
+                    <option value="quintana">Quintana</option>
+                    <option value="herculandia">Herculândia</option>
+                    <option value="tupa">Tupã</option>
+                </select>
+                <img width="15px" src="https://cdn-icons-png.flaticon.com/512/109/109617.png" alt="Seta apontando para direitra">
+                <select id="destino" value="">
+                    <option value="" selected>Destino</option>
+                    <option value="marilia">Marília</option>
+                    <option value="nobrega">Padre Nóbrega</option>
+                    <option value="oriente">Oriente</option>
+                    <option value="pompeia">Pompéia</option>
+                    <option value="paulópolis">Paulópolis</option>
+                    <option value="quintana">Quintana</option>
+                    <option value="herculandia">Herculândia</option>
+                    <option value="tupa">Tupã</option>
+                </select>
+            </div>
+            <br> 
+            <input type="submit">
+        </form>
+    </div>
+    <div>
+        <h2 align="center"><span>Marília</span> X <span>Pompéia</span></h2>
+
+        <div class="flex gap cima margin1">
+            <table border="0" id="seg_sex">
+                <tr>
+                    <td COLSPAN="2"  class="titulo_tabela"><b>Segunda a Sexta</b> </td>
+                </tr>
+                <tr>
+                    <td class="subtitulo">Horário de Partida</td>
+                    <td class="subtitulo">Horário de Chegada</td>
+                </tr>
+                <tr>
+                    <td class="linha">05:50</td>
+                    <td class="linha">06:50</td>
+                </tr>
+                <tr>
+                    <td>06:50</td>
+                    <td>07:50</td>
+                </tr>
+                <tr>
+                    <td class="linha">08:50</td>
+                    <td class="linha">09:50</td>
+                </tr>
+                <tr>
+                    <td>11:20</td>
+                    <td>12:20</td>
+                </tr>
+                <tr>
+                    <td class="linha">12:20</td>
+                    <td class="linha">13:20</td>
+                </tr>
+                <tr>
+                    <td>14:50</td>
+                    <td>15:50</td>
+                </tr>
+                <tr>
+                    <td class="linha">16:10</td>
+                    <td class="linha">17:10</td>
+                </tr>
+                <tr>
+                    <td>16:50</td>
+                    <td>17:50</td>
+                </tr>
+                <tr>
+                    <td class="linha">17:20</td>
+                    <td class="linha">18:20</td>
+                </tr>
+                <tr>
+                    <td>18:20</td>
+                    <td>19:20</td>
+                </tr>
+                <tr>
+                    <td class="linha">18:20</td>
+                    <td class="linha">19:20</td>
+                    <td class="descricao linha">Destino final (Quintana)</td>
+                </tr>
+            </table>
+            <br>
+            <table border="0">
+                <tr>
+                    <td class="titulo_tabela" COLSPAN="2" ><b>Sábado</b></td>
+                </tr>
+                <tr>
+                    <td class="subtitulo">Horário de Partida</td>
+                    <td class="subtitulo">Horário de Chegada</td>
+                </tr>
+                <tr>
+                    <td class="linha">05:50</td>
+                    <td class="linha">06:50</td>
+                </tr>
+                <tr>
+                    <td>06:50</td>
+                    <td>07:50</td>
+                </tr>
+                <tr>
+                    <td class="linha">08:50</td>
+                    <td class="linha">09:50</td>
+                </tr>
+                <tr>
+                    <td>12:20</td>
+                    <td>13:20</td>
+                </tr>
+                <tr>
+                    <td class="linha">14:50</td>
+                    <td class="linha">15:50</td>
+                </tr>
+                <tr>
+                    <td>16:50</td>
+                    <td>17:50</td>
+                </tr>
+                <tr>
+                    <td class="linha">17:20</td>
+                    <td class="linha">18:20</td>
+                </tr>
+                <tr>
+                    <td>18:20</td>
+                    <td>19:20</td>
+                    <td class="descricao">Destino final(Quintana)</td>
+                </tr>
+            </table>
+            <br>
+            <table border="0">
+                <tr>
+                    <td class="titulo_tabela" COLSPAN="2"><b>Domingo</b></td>
+                </tr>
+                <tr>
+                    <td class="subtitulo">Horário de Partida</td>
+                    <td class="subtitulo">Horário de Chegada</td>
+                </tr>
+                <tr>
+                    <td class="linha">06:50</td>
+                    <td class="linha">07:50</td>
+                </tr>
+                <tr>
+                    <td>12:20</td>
+                    <td>13:20</td>
+                </tr>
+                <tr>
+                    <td class="linha">14:50</td>
+                    <td class="linha">15:50</td>
+                </tr>
+                <tr>
+                    <td>17:20</td>
+                    <td>18:20</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
